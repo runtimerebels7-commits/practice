@@ -30,7 +30,7 @@ const ttsSupportedCodes = new Set([
 function IncidentForm({
   onBack,
   onSave,
-  apiUrl = "http://127.0.0.1:5000"
+  apiUrl =  import.meta.env.VITE_API_URL || "http://127.0.0.1:5000"
 }) {
   const [language, setLanguage] = useState("English");
   const [category, setCategory] = useState("Financial");
