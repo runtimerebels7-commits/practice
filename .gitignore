@@ -1,0 +1,34 @@
+# Environment variables
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+backend/venv/
+
+# Node modules
+frontend/node_modules/
+
+# Build files
+frontend/dist/
+
+# Python
+venv/
+
+
+# Secrets
+.env
+.env.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# React
+node_modules/
+dist/
+
+# Editor
+.vscode/

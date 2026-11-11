@@ -1,0 +1,293 @@
+
+/* ECHOWITNESS - INCIDENT FORM UI */
+
+.incident-form-page {
+  width: 100%;
+  max-width: 1050px;
+  min-width: 0;
+  margin: 0 auto;
+  color: #E6D5B7;
+  font-family: "DM Sans", sans-serif;
+}
+
+.incident-form-page * {
+  box-sizing: border-box;
+}
+
+.incident-form-page .form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.incident-form-page .form-heading h2 {
+  margin: 8px 0;
+  font-size: 32px;
+  color: #E6D5B7;
+}
+
+.incident-form-page .form-description,
+.incident-form-page .story-heading p,
+.incident-form-page .recording-area p {
+  color: #aaaabd;
+  font-size: 14px;
+}
+
+.incident-form-page .form-card {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: #282c49;
+  border: 1px solid #41445f;
+  border-radius: 12px;
+}
+
+.incident-form-page label {
+  display: block;
+  margin: 12px 0 8px;
+  color: #E6D5B7;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.incident-form-page select,
+.incident-form-page textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 18px;
+  color: #fff;
+  background: #1E223D;
+  border: 1px solid #555970;
+  border-radius: 7px;
+  font-family: inherit;
+}
+
+.incident-form-page select {
+  min-height: 44px;
+}
+
+.incident-form-page textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.incident-form-page input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 16px;
+  color: #E6D5B7;
+  background: #1E223D;
+  border: 1px solid #555970;
+  border-radius: 7px;
+  font-family: inherit;
+}
+
+.incident-form-page .feature-card input[type="file"]::file-selector-button {
+  margin-right: 12px;
+  padding: 9px 12px;
+  color: #FFFFFF;
+  background: #F54F1B;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.incident-form-page .feature-card select {
+  display: block;
+  width: 100%;
+  height: 46px;
+  margin: 10px 0 16px;
+  padding: 0 12px;
+  color: #fff;
+  background: #1E223D;
+  border: 1px solid #555970;
+  border-radius: 7px;
+}
+
+.incident-form-page .story-heading,
+.incident-form-page .recording-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.incident-form-page .optional-label,
+.incident-form-page .card-number {
+  color: #F54F1B;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.incident-form-page .recording-area {
+  padding: 18px;
+  margin-top: 15px;
+  background: #1E223D;
+  border-radius: 8px;
+}
+
+.incident-form-page .recording-area p {
+  margin-bottom: 0;
+}
+
+.incident-form-page button {
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.incident-form-page button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.incident-form-page .primary-button,
+.incident-form-page .record-button,
+.incident-form-page .transcribe-button,
+.incident-form-page .secondary-action {
+  padding: 12px 18px;
+  color: #fff;
+  background: #F54F1B;
+  border: 0;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.incident-form-page .stop-button {
+  padding: 12px 18px;
+  color: #fff;
+  background: #b93636;
+  border: 0;
+  border-radius: 7px;
+}
+
+.incident-form-page .back-button,
+.incident-form-page .remove-audio {
+  padding: 10px 16px;
+  color: #E6D5B7;
+  background: transparent;
+  border: 1px solid #555970;
+  border-radius: 7px;
+}
+
+.incident-form-page .audio-preview,
+.incident-form-page .transcript-box,
+.incident-form-page .extraction-result,
+.incident-form-page .report-result,
+.incident-form-page .translated-result {
+  padding: 18px;
+  margin-top: 18px;
+  background: #1E223D;
+  border: 1px solid #41445f;
+  border-radius: 8px;
+}
+
+.incident-form-page audio {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.incident-form-page .audio-preview button {
+  margin: 8px 8px 0 0;
+}
+
+.incident-form-page .feature-heading h3,
+.incident-form-page .feature-card h3 {
+  margin: 7px 0;
+  color: #E6D5B7;
+  font-size: 20px;
+}
+
+.incident-form-page .feature-card > p:not(.eyebrow):not(.helper-text) {
+  color: #aaaabd;
+  line-height: 1.6;
+}
+
+.incident-form-page .eyebrow {
+  color: #F54F1B;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.incident-form-page .helper-text {
+  color: #aaaabd;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.incident-form-page .extraction-result pre {
+  overflow-x: auto;
+  padding: 15px;
+  color: #E6D5B7;
+  background: #282c49;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.incident-form-page .report-result h4,
+.incident-form-page .translated-result h4,
+.incident-form-page .extraction-result h4 {
+  margin-top: 15px;
+  color: #F54F1B;
+}
+
+.incident-form-page .report-result p,
+.incident-form-page .report-result li,
+.incident-form-page .translated-result p {
+  color: #E6D5B7;
+  line-height: 1.7;
+}
+
+.incident-form-page .draft-report {
+  padding: 15px;
+  color: #E6D5B7;
+  background: #282c49;
+  border-radius: 7px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.incident-form-page .form-message {
+  padding: 14px;
+  margin: 15px 0;
+  color: #E6D5B7;
+  background: #282c49;
+  border-left: 4px solid #F54F1B;
+  border-radius: 5px;
+}
+
+.incident-form-page .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 10px 0 30px;
+}
+
+@media (max-width: 650px) {
+  .incident-form-page .form-heading,
+  .incident-form-page .recording-area,
+  .incident-form-page .story-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .incident-form-page .form-card {
+    padding: 17px;
+  }
+
+  .incident-form-page .form-heading h2 {
+    font-size: 25px;
+  }
+
+  .incident-form-page .form-actions {
+    flex-wrap: wrap;
+  }
+}
+
